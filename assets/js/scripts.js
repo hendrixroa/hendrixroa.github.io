@@ -1,5 +1,6 @@
 
 /*
+    = Preloader
     = Animated scrolling / Scroll Up
     = Full Screen Slider
     = Sticky Menu

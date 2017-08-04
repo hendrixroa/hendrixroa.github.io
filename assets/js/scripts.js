@@ -1,11 +1,5 @@
-/*
-Theme Name: IAMX
-Author: Trendy Theme
-Author URL: trendytheme.net
-*/
 
 /*
-    = Preloader
     = Animated scrolling / Scroll Up
     = Full Screen Slider
     = Sticky Menu
@@ -20,18 +14,6 @@ Author URL: trendytheme.net
 jQuery(function ($) {
 
     'use strict';
-
-    /* ---------------------------------------------- /*
-     * Preloader
-    /* ---------------------------------------------- */
-
-    $(window).ready(function() {
-        $('#pre-status').fadeOut();
-        $('#tt-preloader').delay(350).fadeOut('slow');
-    });
-
-
-
 
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up

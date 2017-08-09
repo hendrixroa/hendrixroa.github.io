@@ -84,6 +84,7 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  border-radius: 60%;
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
@@ -209,7 +210,7 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
+  color: #000;
 }
 .main-wrapper .company {
   margin-bottom: 10px;

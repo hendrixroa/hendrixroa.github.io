@@ -247,6 +247,9 @@ p {
 .footer .fa-heart {
   color: #fb866a;
 }
+.language{
+  color: #fff;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .sidebar-wrapper {

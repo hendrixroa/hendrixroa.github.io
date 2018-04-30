@@ -1,18 +1,22 @@
 "use strict";
 
 var dataEs = {
-    bio: "Me considero un joven entusiasta por la tecnología y apasionado por la programación de software de calidad que brinden la satisfacción y el mayor desempeño según las exigencias del cliente. Desde los inicios de mi formación en el área de la tecnología he notado como la misma crece y cambia a un ritmo vertiginoso y es ahí donde debemos preguntarnos si seguir creciendo a la par con ella o dedicarnos a otra cosa. Yo opto por seguir creciendo y dar un servicio de calidad.",
+    titleSelectLang: "Select language:",
+    titleSpanish: "Español",
+    titleEnglish: "Ingles",
+    titlePh: "Filosofía",
+    bio: "Me considero un joven entusiasta por la tecnología y apasionado por la programación de software de calidad que brinden la satisfacción y el mayor desempeño según las exigencias del cliente. Desde los inicios de mi formación en el área de la tecnología he notado como la misma crece y cambia a un ritmo vertiginoso y es ahí donde debemos preguntarnos si seguir creciendo a la par con ella o dedicarnos a otra cosa. Yo opto por seguir creciendo y en un futuro desarrollar soluciones tecnológicas que satisfagan las exigencias del cliente brindando el mejor servicio posible. ",
     description: "Desarrollador Backend con nociones de Frontend",
     address: "Lima-Perú",
     personalInfo: [
         {
             icon: "fa fa-envelope",
-            info: "hendrix.alex87@gmail.com",
+            info: "mailto:hendrix.alex87@gmail.com",
             name: "hendrix.alex87@gmail.com"
         },
         {
             icon: "fa fa-phone",
-            info: "+51982544588",
+            info: "tel:+51982544588",
             name: "+51982544588"
         },
         {
@@ -28,7 +32,7 @@ var dataEs = {
         {
             icon: "fa fa-github",
             info: "https://github.com/hendrixroa",
-            name: "https://github.com/hendrixroa"
+            name: "https://github.com"
         },
         {
             icon: "fa fa-twitter",
@@ -50,7 +54,7 @@ var dataEs = {
         }
     ],
     titleLanguages: "Idiomas",
-    laguanges:[
+    languages:[
         {
             name: "Español",
             desc: "(Nativo)"
@@ -61,7 +65,7 @@ var dataEs = {
         }
     ],
     titleInterest: "Intereses",
-    intetest:[
+    interest:[
         "Programación funcional",
         "Paradigmas de programación",
         "Principios SOLID, YAGNI, DRY",
@@ -187,6 +191,11 @@ var dataEs = {
             name: "Uilidades comunes en proyectos de nodejs",
             link: "https://www.npmjs.com/package/@stacksavings/utils",
             desc: "Paquete para utilidades comunes en stacksavings."
+        },
+        {
+            name: "StackSavings Blog",
+            link: "https://stacksavings.com",
+            desc: "Blog destinado a la tecnología."
         }
     ],
     titlePersonalProjects: "Proyectos personales OpenSource",
@@ -266,6 +275,287 @@ var dataEs = {
     ]
 }
 
+var dataEn = {
+    titleSelectLang: "Select language:",
+    titleSpanish: "Spanish",
+    titleEnglish: "English",
+    titlePh: "Filosofía",
+    bio: "I am consider myself passionate of programming world and technologies, always i research about good principles mostly adecuate written software for create high quality levels programs that satisfy all desire of customers. I believe that the responsability and discipline is very important for growth every day.",
+    description: "Developer Backend - Basic Developer Backend",
+    address: "Lima-Perú",
+    personalInfo: [
+        {
+            icon: "fa fa-envelope",
+            info: "mailto:hendrix.alex87@gmail.com",
+            name: "hendrix.alex87@gmail.com"
+        },
+        {
+            icon: "fa fa-phone",
+            info: "tel:+51982544588",
+            name: "+51982544588"
+        },
+        {
+            icon: "fa fa-globe",
+            info: "https://hendrixroa.blogspot.com",
+            name: "Blog"
+        },
+        {
+            icon: "fa fa-linkedin",
+            info: "https://www.linkedin.com/in/hendrix-roa-a6991779/",
+            name: "Linkedin"
+        },
+        {
+            icon: "fa fa-github",
+            info: "https://github.com/hendrixroa",
+            name: "https://github.com"
+        },
+        {
+            icon: "fa fa-twitter",
+            info: "https://twitter.com/hendrix_roa",
+            name: "@hendrix_roa"
+        },
+        {
+            icon: "fa fa-instagram",
+            info: "@hendrixroa",
+            name: "hendrixroa"
+        }
+    ],
+    titleEducation: "Education",
+    education: [
+        {
+            title: "Computer Science",
+            name: "Univesidad Central de Venezuela",
+            period: "2011 - 2017 (No finished)"
+        }
+    ],
+    titleLanguages: "Languages",
+    laguanges:[
+        {
+            name: "Spanish",
+            desc: "(Native)"
+        },
+        {
+            name: "English",
+            desc: "(Technical)"
+        }
+    ],
+    titleInterest: "Interets",
+    intetest:[
+        "Functional Programming",
+        "Programming Paradigs",
+        "SOLID, YAGNI, DRY Principles",
+        "Progressive Wep apps",
+        "Game development",
+        "Unity game engine",
+        "Performance Apps",
+        "Coding refactor",
+        "Software Architecture",
+        "Native Mobile Developement",
+        "Desktop Applications",
+        "Technology Solutions",
+        "Stock exchange"
+    ],
+    titleExperiences: "EXPERIENCE",
+    experiences: [
+        {
+            title: "Backend Developer",
+            period: "2017 - Now",
+            company: "invian.net, Lima-Perú",
+            desc: "I worke in development backend in various project's company."
+        },
+        {
+            title: "Backend Developer",
+            period: "2017 - 2018",
+            company: "Stacksavings.com, California-Usa",
+            desc: "I worked in development backend and software architect."
+        },
+        {
+            title: "Developer C#/.net",
+            period: "2017 - 2018",
+            company: "ControlRoll.com, Chile",
+            desc: "I worked in development backend and frontend."
+        },
+        {
+            title: "FullStack Developer",
+            period: "2017 - 2017",
+            company: "Shareable Innovations, Chile",
+            desc: "I work develop features for the company in backend or frontend. I suggested improve for experience customer better and apply TDD. Modality Freelance. "
+        },
+        {
+            title: "FullStack Developer",
+            period: "2016 - 2017",
+            company: "Remaster, Caracas",
+            desc: "I worked develop features for the company in backend and frontend development."
+        },
+        {
+            title: "FullStack Developer",
+            period: "2016 - 2016",
+            company: "Socialh4ck, Caracas",
+            desc: "I worked in related projects development in house (Without extern customers), in backend and frontend develpment."
+        },
+        {
+            title: "Jr. Developer & Technical Support",
+            period: "2015 - 2016",
+            company: "4Geeks, Caracas",
+            desc: "I began as Technical support ongoing develop features in backend and frontend"
+        },
+        {
+            title: "Development Passant",
+            period: "2015",
+            company: "4Geeks, Caracas",
+            desc: "I began develop an application for management server in house."
+        },
+        {
+            title: "Jr. Developer",
+            period: "2014 - 2015",
+            company: "Eficiatech, Caracas",
+            desc: "I stating as web developer, learning the basic foundations of web development."
+        }
+    ],
+    titleColaborate: "Projects Colaborate",
+    colaborate: [
+        {
+            name: "Golfitrion",
+            link: "https://golfonline.caracascountryclub.org/",
+            desc: "Site management golf tournament."
+        },
+        {
+            name: "Pollito Ingles",
+            link: "http://www.pollitoingles.com/",
+            desc: "Site like e-commerce for sharing and sales babys products."
+        },
+        {
+            name: "Century 21 Peru",
+            link: "http://www.century21.pe/",
+            desc: "Century21 Perú"
+        },
+        {
+            name: "Como quiero",
+            link: "http://comoquiero.cl/",
+            desc: "Site food recipe planning"
+        },
+        {
+            name: "Inmobilia",
+            link: "http://inmobilia.com/",
+            desc: "Site rent and sales houses."
+        },
+        {
+            name: "Remax Venezuela",
+            link: "http://remax.com.ve/",
+            desc: "Site rent and sales houses."
+        },
+        {
+            name: "Kronosocial",
+            link: "https://kronosocial.com/",
+            desc: "Planning social networks for community managers"
+        },
+        {
+            name: "Instacompras",
+            link: "https://instacompras.com/",
+            desc: "E-commerce products"
+        },
+        {
+            name: "Beelivery",
+            link: "https://beelivery.cl/",
+            desc: "Site delivery packages"
+        },
+        {
+            name: "Client Poloniex",
+            link: "https://www.npmjs.com/package/@stacksavings/poloniex-client",
+            desc: "Package mostly easy using api poloniex"
+        },
+        {
+            name: "Client Aws-DynamoDB",
+            link: "https://www.npmjs.com/package/@stacksavings/dynamodb",
+            desc: " Package wrapper AWS-DynamoDB"
+        },
+        {
+            name: "Utils nodejs",
+            link: "https://www.npmjs.com/package/@stacksavings/utils",
+            desc: "Packages utils stacksavings."
+        },
+        {
+            name: "StackSavings Blog",
+            link: "https://stacksavings.com",
+            desc: "Site blog for technology and more."
+        }
+    ],
+    titlePersonalProjects: "Personal Projects OpenSource",
+    personalProjects: [
+        {
+            name: "In case of fire",
+            link: "https://github.com/hendrixroa/in-case-of-fire",
+            desc: "A tools remind push changes Git"
+        }
+    ],
+    titleSkylls: "Skylls",
+    skylls: [
+        {
+            name: "Python & Django",
+            level: "40%",
+        },
+        {
+            name: "React.js",
+            level: "50%",
+        },
+        {
+            name: "Javascript & Node Js",
+            level: "60%",
+        },
+        {
+            name: "Angular",
+            level: "40%",
+        },
+        {
+            name: "Electron Cross-plattforms develepment",
+            level: "35%",
+        },
+        {
+            name: "Php",
+            level: "55%",
+        },
+        {
+            name: "Php & MVC",
+            level: "50%",
+        },
+        {
+            name: "Java & Swing inteface",
+            level: "40%",
+        },
+        {
+            name: "HTML5 & CSS",
+            level: "45%",
+        },
+        {
+            name: "C & C++",
+            level: "50%",
+        },
+        {
+            name: "C#/aspx/.net",
+            level: "40%",
+        },
+        {
+            name: "Linux Desktop & Linux Sever",
+            level: "60%",
+        },
+        {
+            name: "knowledge sql ,like como psql, mysql, mssql, sqlite",
+            level: "50%",
+        },
+        {
+            name: "knowledge Nosql, like como DynamoDB, MongoDB",
+            level: "30%",
+        },
+        {
+            name: "Ruby on Rails",
+            level: "40%",
+        },
+        {
+            name: "AWS Lambda",
+            level: "40%",
+        }
+    ]
+}
 
 var Main = ( function(){
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -275,21 +565,12 @@ var Main = ( function(){
         context.dataEs = dataEs;
         document.getElementById('cv').innerHTML = tmpl(context);*/
 
-        var source   = document.getElementById("some-template").innerHTML;
+        var source   = document.getElementById("template-handlebars").innerHTML;
 
         var template = Handlebars.compile(source);
   
-        var data = { users: [
-  
-            {username: "alan", firstName: "Alan", lastName: "Johnson", email: "alan@test.com" },
-  
-            {username: "allison", firstName: "Allison", lastName: "House", email: "allison@test.com" },
-  
-            {username: "ryan", firstName: "Ryan", lastName: "Carson", email: "ryan@test.com" }
-  
-          ]};
-  
-        document.getElementById("content").innerHTML = template(data);
+
+        document.getElementById("content").innerHTML = template(dataEs);
   
         document.querySelectorAll('.level-bar-inner').forEach((item) => {
             item.style.width = item.dataset.level;

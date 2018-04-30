@@ -23,67 +23,58 @@
 </head> 
 
 <body>
+    <script id="template-handlebars" type="text/x-handlebars-template">
         <div class="wrapper">
             <div class="sidebar-wrapper">
                 <div class="language">
                     <label for="language">
-                        <span><b>Seleccione el Idioma: </b></span>
+                        <span><b>{{ titleSelectLang }} </b></span>
                         <select name="language" id="">
-                            <option value="es">Español</option>
-                            <option value="en">Ingles</option>
+                            <option value="es">{{ titleSpanish }}</option>
+                            <option value="en">{{ titleEnglish }}</option>
                         </select>
                     </label>
                 </div>
                 <div class="profile-container">
                     <img class="profile" width="180" height="245" src="assets/images/profile.jpg"  alt="" />
                     <h1 class="name">Hendrix Roa</h1>
-                    <h3 class="tagline">Desarrollador Backend con nociones de Frontend</h3>
-                    <h2><i class="fa fa-map-marker"></i> Lima-Perú</h2>
+                    <h3 class="tagline">{{ description }}</h3>
+                    <h2><i class="fa fa-map-marker"></i> {{ address }}</h2>
                 </div><!--//profile-container-->
                 
                 <div class="contact-container container-block">
                     <ul class="list-unstyled contact-list">
-                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto:hendrix.alex87@email.com">hendrix.alex87@gmail.com</a></li>
-                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+51982544588">+51982544588</a></li>
-                        <li class="website"><i class="fa fa-globe"></i><a href="https://hendrixroa.blogspot.com" target="_blank">Blog</a></li>
-                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/hendrix-roa-a6991779/" target="_blank">linkedin</a></li>
-                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/hendrixroa" target="_blank">github.com/hendrixroa</a></li>
-                        <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/hendrix_roa" target="_blank">@hendrix_roa</a></li>
-                        <li class="instagram"><i class="fa fa-instagram"></i><a>@hendrixroa</a></li>
+                        {{#personalInfo}}
+                            <li class="email"><i class="{{icon}}"></i><a href="{{info}}">{{name}}</a></li>
+                        {{/personalInfo}}
                     </ul>
                 </div><!--//contact-container-->
                 <div class="education-container container-block">
-                    <h2 class="container-block-title">Educación</h2>
+                    <h2 class="container-block-title">{{titleEducation}}</h2>
+                    {{#education}}
                     <div class="item">
-                        <h4 class="degree">Ciencias de la Computación</h4>
-                        <h5 class="meta">Univesidad Central de Venezuela</h5>
-                        <div class="time">2011 - 2017 (No culminados)</div>
+                        <h4 class="degree">{{title}}</h4>
+                        <h5 class="meta">{{name}}</h5>
+                        <div class="time">{{period}}</div>
                     </div>
+                    {{/education}}
                 </div>
                 
                 <div class="languages-container container-block">
-                    <h2 class="container-block-title">Idiomas</h2>
+                    <h2 class="container-block-title">{{titleLanguages}}</h2>
                     <ul class="list-unstyled interests-list">
-                        <li>Español <span class="lang-desc">(Nativo)</span></li>
-                        <li>Ingles <span class="lang-desc">(Técnico)</span></li>
+                        {{#languages}}
+                        <li>{{name}} <span class="lang-desc">{{desc}}</span></li>
+                        {{/languages}}
                     </ul>
-                </div><!--//interests-->
+                </div>
                 
                 <div class="interests-container container-block">
-                    <h2 class="container-block-title">Intereses</h2>
+                    <h2 class="container-block-title">{{titleInterest}}</h2>
                     <ul class="list-unstyled interests-list">
-                        <li>Programación funcional</li>
-                        <li>Paradigmas de programación</li>
-                        <li>Principios SOLID, YAGNI, DRY</li>
-                        <li>Progressive Wep apps</li>
-                        <li>Desarrollo de videojuegos</li>
-                        <li>Unity game engine</li>
-                        <li>Performance Apps</li>
-                        <li>Refactorización de Código</li>
-                        <li>Arquitectura de Software</li>
-                        <li>Desarrollo Mobile Nativo </li>
-                        <li>Aplicaciones de Escritorio</li>
-                        <li>Soluciones tecnológicas aplicado a cualquier ámbito</li>
+                        {{#interests}}
+                        <li>{{}}</li>
+                        {{/interests}}
                     </ul>
                 </div><!--//interests-->
                 
@@ -91,24 +82,9 @@
             
             <div class="main-wrapper">
                 <section class="section summary-section">
-                    <h2 class="section-title"><i class="fa fa-exclamation"></i>Filosofía</h2>
+                    <h2 class="section-title"><i class="fa fa-exclamation"></i>{{ titlePh }}</h2>
                     <div class="summary">
-                        <p>Me considero joven entusiasta por las tecnologías
-                            nuevas y apasionado por la
-                            programación de software con
-                            metodologías ágiles y otras y que brinden el
-                            mayor desempeño según las
-                            exigencias del cliente. Desde los
-                            inicios de mi formación en el área de
-                            la tecnología he notado como la
-                            misma crece y cambia a un ritmo
-                            vertiginoso y es ahí donde debemos
-                            preguntarnos si seguir creciendo a la
-                            par con ella o dedicarnos a otra cosa.
-                            Yo opto por seguir creciendo y en un futuro desarrollar
-                            soliciones tecnológicas que satisfagan las exigencias del cliente
-                            brindando el mejor servicio posible.
-                        </p>
+                        <p>{{ bio }}</p>
                     </div>
                 </section>
 
@@ -425,45 +401,9 @@
                 </section>
             </div>
         </div>
-    <div id="content">
-    </div>
-
-    <script id="some-template" type="text/x-handlebars-template">
-        <table>
-
-            <thead>
-        
-              <th>Username</th>
-        
-              <th>Real Name</th>
-        
-              <th>Email</th>
-        
-            </thead>
-        
-            <tbody>
-        
-              {{#users}}
-        
-                <tr>
-        
-                  <td>{{username}}</td>
-        
-                  <td>{{firstName}} {{lastName}}</td>
-        
-                  <td>{{email}}</td>
-        
-                </tr>
-        
-              {{/users}}
-        
-            </tbody>
-        
-        </table>
-    </script>
-
+    </script>    
     <div id="content"></div>
-
+    
     <footer class="footer">
         <div class="text-center">
         </div>

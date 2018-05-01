@@ -1,11 +1,11 @@
 "use strict";
 
 var dataEs = {
-    titleSelectLang: "Select language:",
+    titleSelectLang: "Seleccione el Idioma:",
     titleSpanish: "Español",
     titleEnglish: "Ingles",
     titlePh: "Filosofía",
-    bio: "Me considero un joven entusiasta por la tecnología y apasionado por la programación de software de calidad que brinden la satisfacción y el mayor desempeño según las exigencias del cliente. Desde los inicios de mi formación en el área de la tecnología he notado como la misma crece y cambia a un ritmo vertiginoso y es ahí donde debemos preguntarnos si seguir creciendo a la par con ella o dedicarnos a otra cosa. Yo opto por seguir creciendo y en un futuro desarrollar soluciones tecnológicas que satisfagan las exigencias del cliente brindando el mejor servicio posible. ",
+    bio: "Me considero un joven entusiasta por la tecnología y apasionado por la programación de software de calidad que brinden la satisfacción y el mayor desempeño según las exigencias del cliente. Desde los inicios de mi formación en el área de la tecnología he notado como la misma crece y cambia a un ritmo vertiginoso y es ahí donde debemos preguntarnos si seguir creciendo a la par con ella o dedicarnos a otra cosa. Yo opto por seguir creciendo y seguir desarrollando soluciones tecnológicas que satisfagan las exigencias del cliente brindando el mejor servicio posible. ",
     description: "Desarrollador Backend con nociones de Frontend",
     address: "Lima-Perú",
     personalInfo: [
@@ -155,12 +155,12 @@ var dataEs = {
         {
             name: "Inmobilia",
             link: "http://inmobilia.com/",
-            desc: "Portal innmobiliario de alquiler y venta"
+            desc: "Portal inmobiliario de alquiler y venta"
         },
         {
             name: "Remax Venezuela",
             link: "http://remax.com.ve/",
-            desc: "Portal innmobiliario de alquiler y venta"
+            desc: "Portal inmobiliario de alquiler y venta"
         },
         {
             name: "Kronosocial",
@@ -272,16 +272,17 @@ var dataEs = {
             name: "AWS Lambda",
             level: "50%",
         }
-    ]
+    ],
+    titleDownload: "Descargar"
 }
 
 var dataEn = {
     titleSelectLang: "Select language:",
     titleSpanish: "Spanish",
     titleEnglish: "English",
-    titlePh: "Filosofía",
+    titlePh: "Philosophy",
     bio: "I am consider myself passionate of programming world and technologies, always i research about good principles mostly adecuate written software for create high quality levels programs that satisfy all desire of customers. I believe that the responsability and discipline is very important for growth every day.",
-    description: "Developer Backend - Basic Developer Backend",
+    description: "Developer Backend - Basic Developer Frontend",
     address: "Lima-Perú",
     personalInfo: [
         {
@@ -329,7 +330,7 @@ var dataEn = {
         }
     ],
     titleLanguages: "Languages",
-    laguanges:[
+    languages:[
         {
             name: "Spanish",
             desc: "(Native)"
@@ -340,7 +341,7 @@ var dataEn = {
         }
     ],
     titleInterest: "Interets",
-    intetest:[
+    interest:[
         "Functional Programming",
         "Programming Paradigs",
         "SOLID, YAGNI, DRY Principles",
@@ -361,7 +362,7 @@ var dataEn = {
             title: "Backend Developer",
             period: "2017 - Now",
             company: "invian.net, Lima-Perú",
-            desc: "I worke in development backend in various project's company."
+            desc: "I worked in development backend in various project's company."
         },
         {
             title: "Backend Developer",
@@ -539,11 +540,11 @@ var dataEn = {
             level: "60%",
         },
         {
-            name: "knowledge sql ,like como psql, mysql, mssql, sqlite",
+            name: "knowledge sql ,like psql, mysql, mssql, sqlite",
             level: "50%",
         },
         {
-            name: "knowledge Nosql, like como DynamoDB, MongoDB",
+            name: "knowledge Nosql, like DynamoDB, MongoDB",
             level: "30%",
         },
         {
@@ -554,26 +555,42 @@ var dataEn = {
             name: "AWS Lambda",
             level: "40%",
         }
-    ]
+    ],
+    titleDownload: "Download"
 }
 
-var Main = ( function(){
-    document.addEventListener("DOMContentLoaded", function(event) {
-        
-        /*var tmpl = Handlebars.compile(document.getElementById('cv').innerHTML);
-        var context = {};
-        context.dataEs = dataEs;
-        document.getElementById('cv').innerHTML = tmpl(context);*/
+function loadData(lang){
+    var source   = document.getElementById("template-handlebars").innerHTML;
+    var template = Handlebars.compile(source);
+    document.getElementById("content").innerHTML = template(lang === 'es' ? dataEs : dataEn);
+}
 
-        var source   = document.getElementById("template-handlebars").innerHTML;
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
-        var template = Handlebars.compile(source);
-  
+document.addEventListener("DOMContentLoaded", function(event) {
+    var lang = getParameterByName('lang');
+    if(lang === 'es' || lang === 'en'){
+        loadData(lang);
+        document.getElementById('languageSelect').value = lang;
+    }else{
+        window.location.href = '?lang=es'
+        document.getElementById('languageSelect').value = 'es';
+    }
+    document.querySelectorAll('.level-bar-inner').forEach((item) => {
+        item.style.width = item.dataset.level;
+    });   
+});
 
-        document.getElementById("content").innerHTML = template(dataEs);
-  
-        document.querySelectorAll('.level-bar-inner').forEach((item) => {
-            item.style.width = item.dataset.level;
-        });
-    });
-})();
+
+function changeLang(){
+    var select = document.getElementById('languageSelect');
+    window.location.href = '?lang=' + select.value;
+}

@@ -29,7 +29,7 @@
                 <div class="language">
                     <label for="language">
                         <span><b>{{ titleSelectLang }} </b></span>
-                        <select name="language" id="">
+                        <select onchange="changeLang()" name="language" id="languageSelect">
                             <option value="es">{{ titleSpanish }}</option>
                             <option value="en">{{ titleEnglish }}</option>
                         </select>
@@ -40,15 +40,15 @@
                     <h1 class="name">Hendrix Roa</h1>
                     <h3 class="tagline">{{ description }}</h3>
                     <h2><i class="fa fa-map-marker"></i> {{ address }}</h2>
-                </div><!--//profile-container-->
-                
+                    <a href="assets/pdf/Hendrix_Roa_CV.pdf" download><h2><i class="fa fa-file-pdf-o"></i> {{titleDownload}}</h2></a>
+                </div>
                 <div class="contact-container container-block">
                     <ul class="list-unstyled contact-list">
                         {{#personalInfo}}
                             <li class="email"><i class="{{icon}}"></i><a href="{{info}}">{{name}}</a></li>
                         {{/personalInfo}}
                     </ul>
-                </div><!--//contact-container-->
+                </div>
                 <div class="education-container container-block">
                     <h2 class="container-block-title">{{titleEducation}}</h2>
                     {{#education}}
@@ -72,9 +72,9 @@
                 <div class="interests-container container-block">
                     <h2 class="container-block-title">{{titleInterest}}</h2>
                     <ul class="list-unstyled interests-list">
-                        {{#interests}}
-                        <li>{{}}</li>
-                        {{/interests}}
+                        {{#each interest}}
+                        <li>{{this}}</li>
+                        {{/each}}
                     </ul>
                 </div><!--//interests-->
                 
@@ -89,314 +89,55 @@
                 </section>
 
                 <section class="section experiences-section">
-                    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiencias</h2>
-
+                    <h2 class="section-title"><i class="fa fa-briefcase"></i>{{titleExperiences}}</h2>
+                    {{#experiences}}
                     <div class="item">
                         <div class="meta">
                             <div class="upper-row">
-                                <h3 class="job-title">Desarrollador Backend</h3>
-                                <div class="time">2017 - Actualidad</div>
+                                <h3 class="job-title">{{title}}</h3>
+                                <div class="time">{{period}}</div>
                             </div>
-                            <div class="company">Stacksavings.com, California-Usa</div>
+                            <div class="company">{{company}}</div>
                         </div>
                         <div class="details">
                             <p>
-                                Trabajo en los distintos proyectos internos de la empresa, así como en los paquetes públicos de <b>npm</b> que en la empresa se desarrollan para aportar a la comunidad modulos para el manejo de criptomonedas.
+                                {{desc}}
                             </p>  
                         </div>
                     </div>
-                    
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Desarrollador C#/.net</h3>
-                                <div class="time">2017 - 2018</div>
-                            </div>
-                            <div class="company">ControlRoll.com, Chile</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Trabajé en los distintos portales de la empresa brindando nuevas funcionalidades y soporte. 
-                            </p>  
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Desarrollador FullStack</h3>
-                                <div class="time">2017 - 2017</div>
-                            </div>
-                            <div class="company">Shareable Innovations, Chile</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Trabajé en las funcionalidades de los portales que se desarrollaban, con un equipo de mas de 5 personas por proyecto.
-                            </p>  
-                        </div>
-                    </div>
-                
-
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Desarrollador FullStack</h3>
-                                <div class="time">2016 - 2017</div>
-                            </div>
-                            <div class="company">Remaster, Caracas</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Trabajé en los portales inmobiliarios de la empresa, brindando soporte y desarrollo de nuevas funcionalidades y mejoras en la experiencia de usuario. 
-                            </p>  
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Desarrollador FullStack</h3>
-                                <div class="time">2016 - 2016</div>
-                            </div>
-                            <div class="company">Socialh4ck, Caracas</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Trabajé en proyectos relacionados al marketing digital ofreciendo mejoras del servicio y experiencia de usuario.
-                            </p>  
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Desarrollador Jr. & Analista de Soporte</h3>
-                                <div class="time">2015 - 2016</div>
-                            </div>
-                            <div class="company">4Geeks, Caracas</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Trabajé como analista de soporte en los proyectos desarrollados en la empresa, asi mismo  atendía las exigencias del cliente directamente. 
-                            </p>  
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Pasante de Desarrollo</h3>
-                                <div class="time">2015</div>
-                            </div>
-                            <div class="company">4Geeks, Caracas</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Empecé desarrollando un módulo de gestión de servidores internos de la empresa.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Jr. Developer</h3>
-                                <div class="time">2014 - 2015</div>
-                            </div>
-                            <div class="company">Eficiatech, Caracas</div>
-                        </div>
-                        <div class="details">
-                            <p>
-                                Empecé como pasante, aplicando los conocimientos de programación orientados a la web.
-                            </p>  
-                        </div>
-                    </div>
-                    
-                </section><!--//section-->
+                    {{/experiences}}  
+                </section>
                 
                 <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-archive"></i>Colaboración en Proyectos</h2>
-                    <div class="intro">
-                    </div>
+                    <h2 class="section-title"><i class="fa fa-archive"></i>{{titleColaborate}}</h2>
+                    {{#colaborate}}
                     <div class="item">
-                        <span class="project-title"><a href="https://golfonline.caracascountryclub.org">Golfitrion</a></span> - <span class="project-tagline">Un sitio para administrar partidas de golf </span>   
+                        <span class="project-title"><a href="{{link}}">{{name}}</a></span> - <span class="project-tagline">{{desc}}</span>   
                     </div>
-                    <div class="item">
-                        <span class="project-title"><a href="http://www.pollitoingles.com/">Pollito Ingles</a></span> - <span class="project-tagline">Un sitio para ventas e intercambios de articulos para bebes</span>   
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="http://www.century21.pe/" target="_blank">Century 21 Peru</a></span> - 
-                        <span class="project-tagline">Sucursal de la franquicia Century21</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="http://comoquiero.cl/" target="_blank">Como quiero</a></span> - <span class="project-tagline">Un sitio para planificar recetas</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="http://inmobilia.com" target="_blank">Inmobilia</a></span> - <span class="project-tagline">Portal innmobiliario de alquiler y venta</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="http://remax.com.ve" target="_blank">Remax Venezuela</a></span> - <span class="project-tagline">Portal innmobiliario de alquiler y venta</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://kronosocial.com" target="_blank">Kronosocial</a></span> - <span class="project-tagline">Planificador de redes sociales para community managers</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://instacompras.com/" target="_blank">Instacompras</a></span> - <span class="project-tagline">Ecommerce de productos varios</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://beelivery.cl/" target="_blank">Beelivery</a></span> - 
-                        <span class="project-tagline">Sitio destinado a entregas</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://www.npmjs.com/package/@stacksavings/poloniex-client" target="_blank">Cliente Poloniex</a></span> - 
-                        <span class="project-tagline">Paquete npm para el uso fácil de la api de poloniex</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://www.npmjs.com/package/@stacksavings/dynamodb" target="_blank">Cliente Aws-DynamoDB</a></span> - 
-                        <span class="project-tagline">Paquete npm para el uso fácil de la api de AWS-DynamoDB</span>
-                    </div>
-                    <div class="item">
-                        <span class="project-title"><a href="https://www.npmjs.com/package/@stacksavings/utils" target="_blank">Uilidades comunes en proyectos de nodejs</a></span> - 
-                        <span class="project-tagline">Paquete para utilidades comunes en stacksavings.</span>
-                    </div>
+                    {{/colaborate}}
                 </section>
 
                 <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-briefcase"></i>Proyectos personales OpenSource</h2>
+                    <h2 class="section-title"><i class="fa fa-briefcase"></i>{{titlePersonalProjects}}</h2>
+                    {{#personalProjects}}
                     <div class="item">
-                        <span class="project-title"><a href="https://github.com/hendrixroa/in-case-of-fire">In case of fire</a></span> - <span class="project-tagline">Una herramienta para recordar subir cambios a Git</span>   
+                        <span class="project-title"><a href="{{link}}">{{name}}</a></span> - <span class="project-tagline">{{desc}}</span>   
                     </div>
+                    {{/personalProjects}}
                 </section>
                 
                 <section class="skills-section section">
-                    <h2 class="section-title"><i class="fa fa-rocket"></i>Habilidades</h2>
-                    <div class="skillset">     
+                    <h2 class="section-title"><i class="fa fa-rocket"></i>{{titleSkylls}}</h2>
+                    <div class="skillset">
+                        {{#skylls}}  
                         <div class="item">
-                            <h3 class="level-title">Python &amp; Django</h3>
+                            <h3 class="level-title">{{name}}</h3>
                             <div class="level-bar">
-                                <div class="level-bar-inner" data-level="40%">
+                                <div class="level-bar-inner" data-level="{{level}}">
                                 </div>                                      
                             </div>                               
                         </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">React.js</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>                                      
-                            </div>                               
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Javascript &amp; Node Js</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="60%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Angular</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="40%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Electron Cross-plattforms develepment</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="35%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Php</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="55%">
-                                </div>                                      
-                            </div>                                 
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Php &amp; MVC </h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>                                      
-                            </div>                                 
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Java &amp; Swing inteface</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="40%">
-                                </div>                                      
-                            </div>                                 
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">HTML5 &amp; CSS</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="45%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">C &amp; C++</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">C#/aspx/.net</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="40%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Linux</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="70%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Conocimientos en base de datos sql, tales como psql, mysql, mssql, sqlite</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Conocimientos en base de datos Nosql, tales como DynamoDB, MongoDB</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="30%">
-                                </div>                                      
-                            </div>                                
-                        </div>
-                        
-                        <div class="item">
-                            <h3 class="level-title">Ruby on Rails</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="40%">
-                                </div>                                      
-                            </div>                              
-                        </div> 
-                        <div class="item">
-                            <h3 class="level-title">AWS</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="20%">
-                                </div>                                      
-                            </div>                              
-                        </div>    
+                        {{/skylls}}   
                     </div>  
                 </section>
             </div>

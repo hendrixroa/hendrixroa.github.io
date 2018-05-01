@@ -249,6 +249,8 @@ p {
 }
 .language{
   color: #fff;
+  text-align: center;
+  background-color: #2e4049;
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {

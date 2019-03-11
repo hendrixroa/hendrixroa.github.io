@@ -5,9 +5,9 @@ var dataEs = {
     titleSpanish: "Español",
     titleEnglish: "Ingles",
     titlePh: "Filosofía",
-    bio: "Me considero un joven entusiasta por la tecnología y apasionado por la programación de software de calidad que brinden la satisfacción y el mayor desempeño según las exigencias del cliente. Desde los inicios de mi formación en el área de la tecnología he notado como la misma crece y cambia a un ritmo vertiginoso y es ahí donde debemos preguntarnos si seguir creciendo a la par con ella o dedicarnos a otra cosa. Yo opto por seguir creciendo y seguir desarrollando soluciones tecnológicas que satisfagan las exigencias del cliente brindando el mejor servicio posible. ",
-    description: "Desarrollador Backend con nociones de Frontend",
-    address: "Lima-Perú",
+    bio: "Computista con mas de 4 años trabajando en plataformas robustas para negocios de alta escalabilidad, mejorando el flujo de desarrollo mediante técnicas de QA y testing, desarrollo de soluciones internas acuerdo con las reglas y políticas del negocio. Normalmente suelo utilizar un backlog de actividades para analizar compensaciones entre un proveedor de tecnología u otro y discutir con el equipo cual es la mas conveniente basado en reducción de  costos y compesaciones. Incremento en el rendimiento de las aplicaciones mediante benchmarking, programación funcional, optimización y refactorización de código. Tengo familiaridad con la filosofía DevOps en la preparación de pipelines CI/CD con herramientas tales como Gitlab CI, y en el despliegue de aplicaciones en contenedores Docker al proveedor AWS.",
+    description: "Desarrollador Backend/DevOps con nociones de Frontend",
+    address: "Cali-Colombia",
     personalInfo: [
         {
             icon: "fa fa-envelope",
@@ -17,7 +17,7 @@ var dataEs = {
         {
             icon: "fa fa-phone",
             info: "tel:+51982544588",
-            name: "+51982544588"
+            name: "+573016047590"
         },
         {
             icon: "fa fa-globe",
@@ -43,6 +43,11 @@ var dataEs = {
             icon: "fa fa-instagram",
             info: "@hendrixroa",
             name: "hendrixroa"
+        },
+        {
+            icon: "fa fa-briefcase",
+            info: "https://www.upwork.com/o/profiles/users/_~010621cc4f06af29a4/",
+            name: "Perfil de Upwork"
         }
     ],
     titleEducation: "Educación",
@@ -67,6 +72,9 @@ var dataEs = {
     titleInterest: "Intereses",
     interest:[
         "Programación funcional",
+        "Tecnologías blockchain",
+        "Seguridad Informatica",
+        "IA y Machine Learning",
         "Paradigmas de programación",
         "Principios SOLID, YAGNI, DRY",
         "Progressive Wep apps",
@@ -77,15 +85,21 @@ var dataEs = {
         "Arquitectura de Software",
         "Desarrollo Mobile Nativo",
         "Aplicaciones de Escritorio",
-        "Soluciones tecnológicas aplicado a cualquier ámbito"
+        "Proveedores Cloud tales como AWS, GCP, AZURE"
     ],
     titleExperiences: "EXPERIENCIAS",
     experiences: [
         {
+            title: "Desarrollador Backend/DevOps",
+            period: "2018 - Actualidad",
+            company: "supermassive.la, Los Angeles-Usa (Remoto)",
+            desc: "Trabajo como desarrollador backend y arquitecto devops."
+        },
+        {
             title: "Desarrollador Backend",
-            period: "2017 - Actualidad",
+            period: "2017 - 2018",
             company: "Stacksavings.com, California-Usa",
-            desc: "Trabajo en los distintos proyectos internos de la empresa, así como en los paquetes públicos de npm que en la empresa se desarrollan para aportar a la comunidad modulos para el manejo de criptomonedas. "
+            desc: "Trabajé en los distintos proyectos internos de la empresa, así como en los paquetes públicos de npm que en la empresa se desarrollan para aportar a la comunidad modulos para el manejo de criptomonedas. "
         },
         {
             title: "Desarrollador C#/.net",
@@ -196,6 +210,11 @@ var dataEs = {
             name: "StackSavings Blog",
             link: "https://stacksavings.com",
             desc: "Blog destinado a la tecnología."
+        },
+        {
+            name: "Supermassive LA",
+            link: "https://supermassive.la",
+            desc: "Red privada de Membresías para tecnologos."
         }
     ],
     titlePersonalProjects: "Proyectos personales OpenSource",
@@ -218,7 +237,7 @@ var dataEs = {
         },
         {
             name: "Javascript & Node Js",
-            level: "60%",
+            level: "70%",
         },
         {
             name: "Angular",
@@ -269,8 +288,16 @@ var dataEs = {
             level: "40%",
         },
         {
-            name: "AWS Lambda",
+            name: "AWS Software Architec",
             level: "50%",
+        },
+        {
+            name: "DevOps and CI/CD Pipelines",
+            level: "60%"
+        },
+        {
+            name: "Infraestructure as code like Terraform",
+            level: "40%"
         }
     ],
     titleDownload: "Descargar"
@@ -281,9 +308,9 @@ var dataEn = {
     titleSpanish: "Spanish",
     titleEnglish: "English",
     titlePh: "Philosophy",
-    bio: "I am consider myself passionate of programming world and technologies, always i research about good principles mostly adecuate written software for create high quality levels programs that satisfy all desire of customers. I believe that the responsability and discipline is very important for growth every day.",
+    bio: "Computer Scientist with 5 years of experience working on robust platforms for the business of high-level, improving the workflow development with QA techniques and testing, development internal solutions according to with the rules and policy of the business. Normally I use a backlog of tasks to analyze between and tech or other to discuss with the team and choose one to take a better decision based on reducing costs and trade-off. An increase of performance of applications applying to benchmark, functional programming, optimization, and code refactoring, I have familiarity with the philosophy DevOps preparing pipelines CI/CD with tools like Gitlab CI deploying containerized apps (Docker) to AWS Provider.",
     description: "Developer Backend - Basic Developer Frontend",
-    address: "Lima-Perú",
+    address: "Cali-Colombia",
     personalInfo: [
         {
             icon: "fa fa-envelope",
@@ -293,7 +320,7 @@ var dataEn = {
         {
             icon: "fa fa-phone",
             info: "tel:+51982544588",
-            name: "+51982544588"
+            name: "+573016047590"
         },
         {
             icon: "fa fa-globe",
@@ -319,13 +346,18 @@ var dataEn = {
             icon: "fa fa-instagram",
             info: "@hendrixroa",
             name: "hendrixroa"
+        },
+        {
+            icon: "fa fa-briefcase",
+            info: "https://www.upwork.com/o/profiles/users/_~010621cc4f06af29a4/",
+            name: "Upwork Profile"
         }
     ],
     titleEducation: "Education",
     education: [
         {
             title: "Computer Science",
-            name: "Univesidad Central de Venezuela",
+            name: "Universidad Central de Venezuela",
             period: "2011 - 2017 (No finished)"
         }
     ],
@@ -344,6 +376,8 @@ var dataEn = {
     interest:[
         "Functional Programming",
         "Programming Paradigs",
+        "Blockchain Technnologies",
+        "AI and Machine Learning",
         "SOLID, YAGNI, DRY Principles",
         "Progressive Wep apps",
         "Game development",
@@ -354,13 +388,20 @@ var dataEn = {
         "Native Mobile Developement",
         "Desktop Applications",
         "Technology Solutions",
-        "Stock exchange"
+        "Stock exchange",
+        "Cloud computing and cloud provider like aws, gcp."
     ],
     titleExperiences: "EXPERIENCE",
     experiences: [
         {
+            title: "Backend/DevOps Developer",
+            period: "2018 - Current",
+            company: "supermassive.la, Los Angeles-Usa (Remote)",
+            desc: "I work as Backend/devops developer"
+        },
+        {
             title: "Backend Developer",
-            period: "2017 - Now",
+            period: "2017 - 2018",
             company: "invian.net, Lima-Perú",
             desc: "I worked in development backend in various project's company."
         },
@@ -479,6 +520,11 @@ var dataEn = {
             name: "StackSavings Blog",
             link: "https://stacksavings.com",
             desc: "Site blog for technology and more."
+        },
+        {
+          name: "Supermassive LA",
+          link: "https://supermassive.la",
+          desc: "Supermassive is a private membership network of high-value technologists; a global community sharing actionable intelligence in an app and network"
         }
     ],
     titlePersonalProjects: "Personal Projects OpenSource",
@@ -501,7 +547,7 @@ var dataEn = {
         },
         {
             name: "Javascript & Node Js",
-            level: "60%",
+            level: "70%",
         },
         {
             name: "Angular",
@@ -552,8 +598,16 @@ var dataEn = {
             level: "40%",
         },
         {
-            name: "AWS Lambda",
-            level: "40%",
+            name: "AWS Software Architec",
+            level: "50%",
+        },
+        {
+            name: "DevOps and CI/CD Pipelines",
+            level: "60%"
+        },
+        {
+            name: "Infraestructure as code like Terraform",
+            level: "40%"
         }
     ],
     titleDownload: "Download"
@@ -581,8 +635,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         loadData(lang);
         document.getElementById('languageSelect').value = lang;
     }else{
-        window.location.href = '?lang=es'
-        document.getElementById('languageSelect').value = 'es';
+        window.location.href = '?lang=en'
+        document.getElementById('languageSelect').value = 'en';
     }
     document.querySelectorAll('.level-bar-inner').forEach((item) => {
         item.style.width = item.dataset.level;

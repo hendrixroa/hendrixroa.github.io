@@ -5,8 +5,8 @@ var dataEs = {
     titleSpanish: "Español",
     titleEnglish: "Ingles",
     titlePh: "Filosofía",
-    bio: "Computista con mas de 4 años trabajando en plataformas robustas para negocios de alta escalabilidad, mejorando el flujo de desarrollo mediante técnicas de QA y testing, desarrollo de soluciones internas acuerdo con las reglas y políticas del negocio. Normalmente suelo utilizar un backlog de actividades para analizar compensaciones entre un proveedor de tecnología u otro y discutir con el equipo cual es la mas conveniente basado en reducción de  costos y compesaciones. Incremento en el rendimiento de las aplicaciones mediante benchmarking, programación funcional, optimización y refactorización de código. Tengo familiaridad con la filosofía DevOps en la preparación de pipelines CI/CD con herramientas tales como Gitlab CI, y en el despliegue de aplicaciones en contenedores Docker al proveedor AWS.",
-    description: "Desarrollador Backend/DevOps con nociones de Frontend",
+    bio: "Computista con mas de 5 años trabajando en plataformas robustas para negocios de alta escalabilidad, mejorando el flujo de desarrollo mediante técnicas de QA y testing, desarrollo de soluciones internas acuerdo con las reglas y políticas del negocio. Normalmente suelo utilizar un backlog de actividades para analizar compensaciones entre un proveedor de tecnología u otro y discutir con el equipo cual es la mas conveniente basado en reducción de  costos y compesaciones. Incremento en el rendimiento de las aplicaciones mediante benchmarking, programación funcional, optimización y refactorización de código. Tengo familiaridad con la filosofía DevOps en la preparación de pipelines CI/CD con herramientas tales como Gitlab CI, y en el despliegue de aplicaciones en contenedores Docker al proveedor AWS.",
+    description: "Developer Backend - DevSecOps Engineer - Basic Developer Frontend",
     address: "Cali-Colombia",
     personalInfo: [
         {
@@ -308,8 +308,8 @@ var dataEn = {
     titleSpanish: "Spanish",
     titleEnglish: "English",
     titlePh: "Philosophy",
-    bio: "Computer Scientist with 5 years of experience working on robust platforms for the business of high-level, improving the workflow development with QA techniques and testing, development internal solutions according to with the rules and policy of the business. Normally I use a backlog of tasks to analyze between and tech or other to discuss with the team and choose one to take a better decision based on reducing costs and trade-off. An increase of performance of applications applying to benchmark, functional programming, optimization, and code refactoring, I have familiarity with the philosophy DevOps preparing pipelines CI/CD with tools like Gitlab CI deploying containerized apps (Docker) to AWS Provider.",
-    description: "Developer Backend - Basic Developer Frontend",
+    bio: "Computer Scientist with 5 years of experience working on robust platforms for the business of high-level, improving the workflow development with QA techniques and testing, development internal solutions according to the rules and policy of the business. Normally I use a backlog of tasks to analyze between and tech or other to discuss with the team and choose one to make a better decision based on reducing costs and trade-off. An increase in performance of applications applying to benchmark, functional programming, optimization, and code refactoring, I have familiarity with the philosophy DevOps preparing pipelines CI/CD with tools like Gitlab CI deploying containerized apps (Docker) to AWS Provider.",
+    description: "Developer Backend - DevSecOps Engineer - Basic Developer Frontend",
     address: "Cali-Colombia",
     personalInfo: [
         {

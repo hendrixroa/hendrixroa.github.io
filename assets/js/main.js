@@ -16,8 +16,8 @@ var dataEs = {
         },
         {
             icon: "fa fa-phone",
-            info: "tel:+51982544588",
-            name: "+573016047590"
+            info: "tel:+573177693868",
+            name: "+573177693868"
         },
         {
             icon: "fa fa-globe",
@@ -319,8 +319,8 @@ var dataEn = {
         },
         {
             icon: "fa fa-phone",
-            info: "tel:+51982544588",
-            name: "+573016047590"
+            info: "tel:+573177693868",
+            name: "+573177693868"
         },
         {
             icon: "fa fa-globe",

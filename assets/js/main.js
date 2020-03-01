@@ -56,7 +56,12 @@ var dataEs = {
             title: "Ciencias de la Computación",
             name: "Univesidad Central de Venezuela",
             period: "2011 - 2017 (No culminados)"
-        }
+        },
+        {
+            title: "Modalidad Autodidacta",
+            name: "Cursos onlines, workshops, Libros, experiencia en curso...",
+            period: "Present"
+        },
     ],
     titleLanguages: "Idiomas",
     languages:[
@@ -85,15 +90,22 @@ var dataEs = {
         "Arquitectura de Software",
         "Desarrollo Mobile Nativo",
         "Aplicaciones de Escritorio",
+        "Tecnologías Backend",
         "Proveedores Cloud tales como AWS, GCP, AZURE"
     ],
     titleExperiences: "EXPERIENCIAS",
     experiences: [
         {
             title: "Desarrollador Backend/DevOps",
-            period: "2018 - Actualidad",
+            period: "2020 - presente",
+            company: "itsdavid.cc, Los Angeles-Usa (Remoto)",
+            desc: "Trabajo como desarrollador backend y cloud consultant."
+        },
+        {
+            title: "Desarrollador Backend/DevOps",
+            period: "2018 - 2019",
             company: "supermassive.la, Los Angeles-Usa (Remoto)",
-            desc: "Trabajo como desarrollador backend y arquitecto devops."
+            desc: "Trabajé como desarrollador backend y arquitecto DevOps."
         },
         {
             title: "Desarrollador Backend",
@@ -215,6 +227,11 @@ var dataEs = {
             name: "Supermassive LA",
             link: "https://supermassive.la",
             desc: "Red privada de Membresías para tecnologos."
+        },
+        {
+            name: "David",
+            link: "https://itsdavid.cc",
+            desc: "Unlock the True Value of Your Music"
         }
     ],
     titlePersonalProjects: "Proyectos personales OpenSource",
@@ -228,11 +245,23 @@ var dataEs = {
     titleSkylls: "Habilidades",
     skylls: [
         {
-            name: "Python & Django",
-            level: "40%",
+            name: "C & C++",
+            level: "60%",
         },
         {
-            name: "React.js",
+            name: "C#/aspx/.net",
+            level: "30%",
+        },
+        {
+            name: "Python & Django",
+            level: "35%",
+        },
+        {
+            name: "Java & Swing inteface",
+            level: "30%",
+        },
+        {
+            name: "Php & MVC",
             level: "50%",
         },
         {
@@ -240,67 +269,242 @@ var dataEs = {
             level: "70%",
         },
         {
+            name: "Typescript",
+            level: "50%",
+        },
+        {
+            name: "Express.js",
+            level: "60%",
+        },
+        {
+            name: "TypeORM",
+            level: "50%",
+        },
+        {
+            name: "Ruby on Rails",
+            level: "30%",
+        },
+        {
+            name: "React.js",
+            level: "35%",
+        },
+        {
             name: "Angular",
-            level: "40%",
+            level: "25%",
         },
         {
             name: "Electron Cross-plattforms develepment",
             level: "35%",
         },
         {
-            name: "Php",
-            level: "55%",
-        },
-        {
-            name: "Php & MVC",
-            level: "50%",
-        },
-        {
-            name: "Java & Swing inteface",
-            level: "40%",
-        },
-        {
             name: "HTML5 & CSS",
             level: "45%",
-        },
-        {
-            name: "C & C++",
-            level: "50%",
-        },
-        {
-            name: "C#/aspx/.net",
-            level: "40%",
         },
         {
             name: "Linux Desktop y Linux Sever",
             level: "60%",
         },
         {
-            name: "Conocimientos en base de datos sql, tales como psql, mysql, mssql, sqlite",
+            name: "Docker/Contenedores",
             level: "50%",
         },
         {
-            name: "Conocimientos en base de datos Nosql, tales como DynamoDB, MongoDB",
-            level: "30%",
+            name: "Conocimientos en base de datos sql, tales como PostgreSQL, mysql, mssql, sqlite",
+            level: "60%",
         },
         {
-            name: "Ruby on Rails",
-            level: "40%",
+            name: "Conocimientos en base de datos Nosql, tales como DynamoDB, MongoDB",
+            level: "35%",
+        },
+        {
+            name: "CI/CD Pipelines with Gitlab",
+            level: "60%"
+        },
+        {
+            name: "Terraform (Infraestructure as Code)",
+            level: "70%"
         },
         {
             name: "AWS Software Architec",
             level: "50%",
         },
         {
-            name: "DevOps and CI/CD Pipelines",
+            name: "AWS VPC",
+            level: "70%"
+        },
+        {
+            name: "AWS EC2",
+            level: "70%"
+        },
+        {
+            name: "AWS IAM",
+            level: "70%"
+        },
+        {
+            name: "AWS Elastic Load Balancing",
             level: "60%"
         },
         {
-            name: "Infraestructure as code like Terraform",
+            name: "AWS S3",
+            level: "70%"
+        },
+        {
+            name: "AWS ECS",
+            level: "75%"
+        },
+        {
+            name: "AWS ECR",
+            level: "90%"
+        },
+        {
+            name: "AWS Amplify",
+            level: "30%"
+        },
+        {
+            name: "AWS Codedeploy",
+            level: "50%"
+        },
+        {
+            name: "AWS APIGateway",
+            level: "80%"
+        },
+        {
+            name: "AWS X-RAY",
             level: "40%"
+        },
+        {
+            name: "AWS RDS",
+            level: "60%"
+        },
+        {
+            name: "AWS DynamoDB",
+            level: "30%"
+        },
+        {
+            name: "AWS Cloudformation",
+            level: "30%"
+        },
+        {
+            name: "AWS WAF",
+            level: "60%"
+        },
+        {
+            name: "AWS Config",
+            level: "90%"
+        },
+        {
+            name: "AWS Organizations",
+            level: "50%"
+        },
+        {
+            name: "AWS Cognito",
+            level: "80%"
+        },
+        {
+            name: "AWS Comprehend",
+            level: "40%"
+        },
+        {
+            name: "AWS Cloudwatch",
+            level: "60%"
+        },
+        {
+            name: "AWS Elasticache",
+            level: "60%"
+        },
+        {
+            name: "AWS Elasticsearch & Kibana",
+            level: "60%"
+        },
+        {
+            name: "AWS SSO",
+            level: "60%"
+        },
+        {
+            name: "AWS Elasticache",
+            level: "50%"
+        },
+        {
+            name: "AWS Security Hub",
+            level: "60%"
+        },
+        {
+            name: "AWS Guardduty",
+            level: "60%"
+        },
+        {
+            name: "AWS Key Management Service",
+            level: "30%"
+        },
+        {
+            name: "AWS Lambda",
+            level: "90%"
+        },
+        {
+            name: "AWS SNS",
+            level: "60%"
+        },
+        {
+            name: "AWS Fargate",
+            level: "85%"
+        },
+        {
+            name: "AWS Cloud9",
+            level: "90%"
+        },
+        {
+            name: "AWS Cloudfront",
+            level: "90%"
+        },
+        {
+            name: "AWS Route53",
+            level: "30%"
+        },
+        {
+            name: "AWS Certificate Manager",
+            level: "35%"
+        },
+        {
+            name: "AWS Cloudtrail",
+            level: "35%"
+        },
+        {
+            name: "AWS Secrets Manager",
+            level: "35%"
+        },
+        {
+            name: "AWS SDK.js",
+            level: "40%"
+        },
+        {
+            name: "AWS CLI",
+            level: "45%"
         }
     ],
-    titleDownload: "Descargar"
+    titleDownload: "Descargar",
+    titleProfileDetail: "Perfiles",
+    profileDetails: [
+        {
+            name: "Programador Frontend",
+            desc: "He desempeñado a...",
+        },
+        {
+            name: "Programador Backend",
+            desc: "He desempeñado a...",
+        },
+        {
+            name: "Ingeniero DevOps",
+            desc: "He desempeñado a...",
+        },
+        {
+            name: "Ingeniero SecOps",
+            desc: "He desempeñado a...",
+        },
+        {
+            name: "Arquitecto de Nube",
+            desc: "He desempeñado a...",
+        }, 
+    ],
 }
 
 var dataEn = {

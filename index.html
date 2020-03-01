@@ -125,7 +125,18 @@
                     </div>
                     {{/personalProjects}}
                 </section>
-                
+
+                 <section class="section projects-section">
+                    <h2 class="section-title"><i class="fa fa-user"></i>{{titleProfileDetail}}</h2>
+                    <div class="skillset">
+                        {{#profileDetails}}
+                            <div class="item">
+                                <span class="project-title"><b>{{name}}</b></span> - <span class="project-tagline">{{desc}}</span>   
+                            </div>
+                        {{/profileDetails}} 
+                    </div>  
+                </section>
+
                 <section class="skills-section section">
                     <h2 class="section-title"><i class="fa fa-rocket"></i>{{titleSkylls}}</h2>
                     <div class="skillset">

@@ -71,7 +71,7 @@ var dataEs = {
         },
         {
             name: "Ingles",
-            desc: "(Técnico)"
+            desc: "(Intermedio/B1)"
         }
     ],
     titleInterest: "Intereses",
@@ -649,7 +649,7 @@ var dataEn = {
         },
         {
             name: "English",
-            desc: "(Technical)"
+            desc: "(Intermediate/B1)"
         }
     ],
     titleInterest: "Interests",

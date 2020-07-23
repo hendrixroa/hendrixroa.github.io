@@ -549,6 +549,14 @@ var dataEs = {
             level: "35%"
         },
         {
+            name: "AWS Transfer Family",
+            level: "50%"
+        },
+        {
+            name: "AWS SQS",
+            level: "50%"
+        },
+        {
             name: "AWS SDK.js",
             level: "40%"
         },
@@ -1131,6 +1139,14 @@ var dataEn = {
         {
             name: "AWS Secrets Manager",
             level: "35%"
+        },
+        {
+            name: "AWS Transfer Family",
+            level: "50%"
+        },
+        {
+            name: "AWS SQS",
+            level: "50%"
         },
         {
             name: "AWS SDK.js",

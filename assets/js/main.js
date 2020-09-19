@@ -570,7 +570,7 @@ var dataEs = {
     profileDetails: [
         {
             name: "Programador Frontend Jr.",
-            desc: "Desarrollo de vistas sencillas para el renderizado de datos, manipulación del DOM, animaciones básicas con el uso de HTML básico y con librerías/frameworks tales como JQuery, Angular y React.js",
+            desc: "Desarrollo de vistas sencillas para el renderizado de datos, manipulación del DOM, conocimientos básicos en React.js y JQuery.",
         },
         {
             name: "Programador Backend",
@@ -1162,7 +1162,7 @@ var dataEn = {
     profileDetails: [
         {
             name: "Frontend Jr. Developer",
-            desc: "Development of simple views for data rendering, DOM forms, basic animations with the use of basic HTML and with libraries/frameworks such as JQuery, Angular and React.js",
+            desc: "Development of simple views for data rendering, DOM forms, basic acknowledge in React.js and JQuery.",
         },
         {
             name: "Backend Developer",

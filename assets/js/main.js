@@ -826,7 +826,7 @@ var dataEn = {
             desc: "Unlock the True Value of Your Music"
         }
     ],
-    titlePersonalProjects: "Projects/Libreries collaborations OpenSource",
+    titlePersonalProjects: "Projects/Libraries collaborations OpenSource",
     personalProjects: [
         {
             name: "In case of fire",

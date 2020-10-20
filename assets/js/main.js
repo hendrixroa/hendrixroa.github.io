@@ -293,11 +293,6 @@ var dataEn = {
             desc: "Module to automate the ecs task integrated with cron jobs"
         },
         {
-            name: "Terraform Cron ECS Task",
-            link: "https://registry.terraform.io/modules/hendrixroa/cron-ecs-task/aws/latest",
-            desc: "Module to automate the ecs task integrated with cron jobs"
-        },
-        {
             name: "Terraform aws lambda",
             link: "https://registry.terraform.io/modules/hendrixroa/lambda/aws/latest",
             desc: "Module lambda to automate aws lambda resources using a layer"
@@ -316,11 +311,6 @@ var dataEn = {
             name: "Docker image Python + Terraform",
             link: "https://hub.docker.com/r/hendrixroa/python3-terraform",
             desc: "Docker image with python3, awscli and terraform prebuilt."
-        },
-        {
-            name: "Docker image Python + talib integration",
-            link: "https://hub.docker.com/r/hendrixroa/python-ta-lib",
-            desc: "Docker image with python3 + ta-lib integration."
         },
         {
             name: "Docker image Python + talib integration",

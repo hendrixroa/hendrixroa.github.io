@@ -11,8 +11,8 @@ var dataEn = {
     personalInfo: [
         {
             icon: "fa fa-envelope",
-            info: "mailto:hendrix.alex87@gmail.com",
-            name: "hendrix.alex87@gmail.com"
+            info: "mailto:me@hendrixroa.com",
+            name: "me@hendrixroa.com"
         },
         {
             icon: "fa fa-phone",
@@ -21,12 +21,12 @@ var dataEn = {
         },
         {
             icon: "fa fa-globe",
-            info: "https://hendrixroa.blogspot.com",
+            info: "https://blog.hendrixroa.com",
             name: "Blog"
         },
         {
             icon: "fa fa-linkedin",
-            info: "https://www.linkedin.com/in/hendrix-roa-a6991779/",
+            info: "https://www.linkedin.com/in/hendrix-roa",
             name: "Linkedin"
         },
         {
@@ -41,7 +41,7 @@ var dataEn = {
         },
         {
             icon: "fa fa-instagram",
-            info: "@hendrixroa",
+            info: "https://instagram.com/@hendrixroa",
             name: "hendrixroa"
         },
         {

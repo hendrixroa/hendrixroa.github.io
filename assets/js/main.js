@@ -56,6 +56,11 @@ var dataEn = {
             title: "Computer Science",
             name: "Universidad Central de Venezuela",
             period: "2011 - 2017 (No finished)"
+        },
+        {
+            title: "self-taught",
+            name: "World Wide",
+            period: "2014 - present (No planning stop learning 😉)"
         }
     ],
     titleLanguages: "Languages",
@@ -72,8 +77,8 @@ var dataEn = {
     titleInterest: "Interests",
     interest:[
         "Functional Programming",
-        "Programming Paradigs",
-        "Blockchain Technnologies",
+        "Programming Paradigms",
+        "Blockchain Technologies",
         "AI and Machine Learning",
         "SOLID, YAGNI, DRY Principles",
         "Progressive Wep apps",
@@ -82,7 +87,7 @@ var dataEn = {
         "Performance Apps",
         "Coding refactor",
         "Software Architecture",
-        "Native Mobile Developement",
+        "Native Mobile Development",
         "Desktop Applications",
         "Technology Solutions",
         "Stock exchange",
@@ -93,8 +98,14 @@ var dataEn = {
         {
             title: "Backend/DevOps Developer",
             period: "2020 - present",
+            company: "https://devbase.us (Remote)",
+            desc: "I'm working as backend developer and cloud consultant"
+        },
+        {
+            title: "Backend/DevOps Developer",
+            period: "2020",
             company: "itsdavid.cc, Los Angeles-Usa (Remote)",
-            desc: "I work as backend developer and cloud consultant"
+            desc: "I worked as backend developer and cloud consultant"
         },
         {
             title: "Backend/DevOps Developer",
@@ -346,6 +357,46 @@ var dataEn = {
             name: "iam-role-ecs",
             link: "https://registry.terraform.io/modules/hendrixroa/iam-role-ecs/aws/1.0.0",
             desc: "Terraform module to create IAM roles needed for ECS"
+        },
+        {
+            name: "aws-cognito-elasticsearch",
+            link: "https://registry.terraform.io/modules/hendrixroa/cognito-elasticsearch/aws/latest",
+            desc: "Terraform module to provisioning elasticsearch domain protected with cognito."
+        },
+        {
+            name: "apigateway-provision",
+            link: "https://registry.terraform.io/modules/hendrixroa/apigateway-provision/aws/latest",
+            desc: "Terraform module to provision API Gateway resources to deploy a OpenAPI (aka swagger) specification."
+        },
+        {
+            name: "send-alert-slack",
+            link: "https://registry.terraform.io/modules/hendrixroa/send-alert-slack/aws/latest",
+            desc: "Terraform module to provision AWS Lambda to send a notification to slack workspace."
+        },
+        {
+            name: "send-alert-slack",
+            link: "https://registry.terraform.io/modules/hendrixroa/send-alert-slack/aws/latest",
+            desc: "Terraform module to provision AWS Lambda to send a notification to slack workspace."
+        },
+        {
+            name: "security-report",
+            link: "https://registry.terraform.io/modules/hendrixroa/security-report/aws/latest",
+            desc: "Terraform module to provision AWS Lambda that notifies security issues."
+        },
+        {
+            name: "ecs-task-stopped",
+            link: "https://registry.terraform.io/modules/hendrixroa/ecs-task-stopped/aws/latest",
+            desc: "Terraform module to provision AWS Lambda that notifies the ecs task status."
+        },
+        {
+            name: "ecs-task-provisioning",
+            link: "https://registry.terraform.io/modules/hendrixroa/ecs-task-provisioning/aws/latest",
+            desc: "Terraform module to provision AWS Lambda that process events from ECS if a task or container is provisioning."
+        },
+        {
+            name: "codedeploy-trigger-actions",
+            link: "https://registry.terraform.io/modules/hendrixroa/codedeploy-trigger-actions/aws/latest",
+            desc: "AWS Lambda codedeploy actions automated with terraform that after receiving a message if a deploy was made successfully."
         }
     ],
     titleSkylls: "Skylls",

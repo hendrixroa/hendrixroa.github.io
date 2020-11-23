@@ -397,6 +397,11 @@ var dataEn = {
             name: "codedeploy-trigger-actions",
             link: "https://registry.terraform.io/modules/hendrixroa/codedeploy-trigger-actions/aws/latest",
             desc: "AWS Lambda codedeploy actions automated with terraform that after receiving a message if a deploy was made successfully."
+        },
+        {
+            name: "swagger-aws-api-gateway",
+            link: "https://www.npmjs.com/package/swagger-aws-api-gateway",
+            desc: "Small library to add AWS API Gateway integration to your swagger/openapi specification."
         }
     ],
     titleSkylls: "Skylls",

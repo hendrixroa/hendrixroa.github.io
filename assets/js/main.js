@@ -402,6 +402,11 @@ var dataEn = {
             name: "swagger-aws-api-gateway",
             link: "https://www.npmjs.com/package/swagger-aws-api-gateway",
             desc: "Small library to add AWS API Gateway integration to your swagger/openapi specification."
+        },
+        {
+            name: " ecs-service-blue-green-deployment ",
+            link: "https://registry.terraform.io/modules/hendrixroa/ecs-service-blue-green-deployment/aws/latest",
+            desc: "Deploy your containers to AWS ECS with minimal configurations."
         }
     ],
     titleSkylls: "Skylls",
